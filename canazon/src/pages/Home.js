@@ -1,6 +1,9 @@
 function Home() {
     return (
-        <h2>im boiling with rage if this is not home</h2>
+        <div id="homepage">
+            <h2>Welcome to Canazon!</h2>
+            <p>Here at Canazon, we make it our goal to help others in pursuit of purchasing art. We sell art from the beautiful mind of Cannon Roach.</p>
+        </div>
     );
 }
 

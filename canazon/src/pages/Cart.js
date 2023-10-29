@@ -1,6 +1,13 @@
 function Cart() {
+    var cartitemstring = sessionStorage.getItem('mycart');
+    var cartitems = cartitemstring.split(",");
     return (
-        <h2>im boiling with rage</h2>
+        <div id="cartpage">
+            <h2>Thank you for shopping with Canazon! here are the items you purchased.</h2>
+            {cartitems.map((items) => (
+                        <p>{items}</p>
+                    ))}
+        </div>
     );
 }
 
